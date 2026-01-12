@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+  <loc>https://YOUR_URL.TLD/</loc>
+</url>
+<url>
+  <loc>https://YOUR_URL.TLD/blog/</loc>
+</url>
+<url>
+  <loc>https://YOUR_URL.TLD/blog/hello/</loc>
+  <lastmod>2026-01-12</lastmod>
+</url>
+<url>
+  <loc>https://YOUR_URL.TLD/pages/archive/</loc>
+</url>
+<url>
+  <loc>https://YOUR_URL.TLD/pages/projects/</loc>
+</url>
+<url>
+  <loc>https://YOUR_URL.TLD/tags/</loc>
+</url>
+<url>
+  <loc>https://YOUR_URL.TLD/tags/conversa/</loc>
+</url>
+</urlset>

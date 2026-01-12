@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt">
+    <title>IanMatrix - conversa</title>
+    <subtitle>Novo post do IanMatrix</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://YOUR_URL.TLD/tags/conversa/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://YOUR_URL.TLD"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-01-12T00:00:00+00:00</updated>
+    <id>https://YOUR_URL.TLD/tags/conversa/atom.xml</id>
+    <entry xml:lang="pt">
+        <title>Primeiro Post</title>
+        <published>2026-01-12T00:00:00+00:00</published>
+        <updated>2026-01-12T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Ian Guizeline
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://YOUR_URL.TLD/blog/hello/"/>
+        <id>https://YOUR_URL.TLD/blog/hello/</id>
+        
+        <content type="html" xml:base="https://YOUR_URL.TLD/blog/hello/">&lt;h1 id=&quot;bem-vindo-ao&quot;&gt;Bem-vindo ao IanMatrix
+&lt;&#x2F;h1&gt;
+&lt;p&gt;Esse é o meu primeiro post no IanMatrix
+.&lt;&#x2F;p&gt;
+&lt;p&gt;Criei esse blog com o intuito de documentar (like &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;akitaonrails.com&#x2F;&quot;&gt;AkitaOnRails’s&lt;&#x2F;a&gt;) todos os meus estudos e ao mesmo tempo servir como um &lt;strong&gt;portfólio vivo&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;o-que-voce-vai-encontrar-aqui&quot;&gt;O que você vai encontrar aqui?&lt;&#x2F;h2&gt;
+&lt;p&gt;É um universo de conhecimento sobre:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Game development&lt;&#x2F;li&gt;
+&lt;li&gt;Engines e ferramentas&lt;&#x2F;li&gt;
+&lt;li&gt;Sistemas, matemática e física&lt;&#x2F;li&gt;
+&lt;li&gt;Programação low-level&lt;&#x2F;li&gt;
+&lt;li&gt;Projetos e protótipos&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Vou criar projetos do zero e documentar:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;decisões de arquitetura&lt;&#x2F;li&gt;
+&lt;li&gt;erros e correções&lt;&#x2F;li&gt;
+&lt;li&gt;otimizações&lt;&#x2F;li&gt;
+&lt;li&gt;algoritmos&lt;&#x2F;li&gt;
+&lt;li&gt;recomendação de leitura&lt;&#x2F;li&gt;
+&lt;li&gt;e tudo que realmente importa no processo de construção.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Aqui o foco é &lt;strong&gt;entender como as coisas funcionam&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;aprender-junto&quot;&gt;Aprender junto&lt;&#x2F;h2&gt;
+&lt;p&gt;Este blog não é um monólogo.&lt;&#x2F;p&gt;
+&lt;p&gt;A ideia é que:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;os leitores aprendam comigo —&lt;br &#x2F;&gt;
+e me ajudem a melhorar o que eu construo.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Feedback, sugestões e críticas fazem parte do projeto tanto quanto o código.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
