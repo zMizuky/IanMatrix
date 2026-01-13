@@ -1,8 +1,8 @@
 [[project]]
-name = "Hello World Project"
-desc = "A simple demo project showcasing Linkita&apos;s project features"
-tags = ["meta"]
+name = "iMatrix"
+desc = "Uma engine simples feita com SDL3 e documentada no blog"
+tags = ["engine"]
 links = [
-    { name = "homepage", url = "$BASE_URL/pages/projects/cool-project/", newtab = false },
-    { name = "source", url = "https://example.com" },
+    { name = "homepage", url = "$BASE_URL/pages/projects/iMatrix/", newtab = false },
+    { name = "github", url = "https://github.com/zMizuky/iMatrix", newtab = false }
 ]

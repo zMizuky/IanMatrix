@@ -239,6 +239,10 @@ int main(){
     return 0;
 }
 ```
+Pode ser acessado também pelo [GitHub](https://github.com/zMizuky/iMatrix):
+```text
+https://github.com/zMizuky/iMatrix
+```
 Acompanhe para a parte 2!
 
 # Links úteis
