@@ -11,11 +11,11 @@ alt = "Engine em SDL3"
 tags = ["engine", "gamedev"]
 +++
 
-Minha intenção não é substituir engines consolidadas como **Unity** ou **Unreal** — até porque eu não tenho a experiência e o time por trás desses projetos. O objetivo aqui é aprender como essas ferramentas realmente funcionam por dentro. Para isso eu tenho que começar do básico (construir uma base forte). Antes de começar, quero informar que alguns links úteis está no final da página, como documentação ou artigos.
+Minha intenção não é substituir engines consolidadas como **Unity** ou **Unreal** — até porque eu não tenho a experiência e o time por trás desses projetos. O objetivo aqui é aprender como essas ferramentas realmente funcionam por dentro. Para isso, eu tenho que começar do básico (construir uma base forte). Antes de começar, quero informar que alguns links úteis está no final da página, como documentação ou artigos.
 # A ideia por trás da engine
 Todo projeto precisa de um bom plano para ser bem executado. Então, vou dizer alguns de meus planos para esse projeto:
 ## Ideia do jogo
-Antes de tudo eu precisei pensar em um jogo simples. Onde, a engine, vai dar total suporte para esse modelo de jogo. Vai ser um jogo que se passa, primeiramente, numa nave. Onde essa nave é constantemente atacada por asteroides, ou aliens, e o jogador (ou, no futuro, jogadores. **SPOILER**) precisam consertá-la.
+Antes de tudo eu precisei pensar em um jogo simples. No qual, a engine, vai dar total suporte para esse modelo de jogo. Vai ser um jogo que se passa, primeiramente, numa nave. Onde essa nave é constantemente atacada por asteroides, ou aliens, e o jogador (ou, no futuro, jogadores. **SPOILER**) precisa consertá-la.
 
 Eu sugiro, caso for seguir o post, que crie uma ideia própria para ver se realmente você entendeu o conteúdo. Mas indico uma ideia simples, como a minha.
 ## Para que tipo de jogo vai ser essa **engine**?
@@ -30,17 +30,17 @@ Gostaria muito de fazer algo em 3D, porém é algo muito complexo no momento (qu
 
 ### Categoria?
 Para esse estilo de jogo penso que **top-down**, que é uma câmera com visão superior, funcionará melhor.
-![Minish Cap](/images/topdowngames.png)
+![Minish Cap](https://zmizuky.github.io/IanMatrix/images/topdowngames.png)
 *Jogos como MinishCap, Stardew Valley, Pokemon Fire Red e até mesmo Space Invaders são feitos em top-down, por exemplo.*
 
 ### Plataforma?
 E a plataforma que escolhi foi **Windows** e **Linux** (pela compatibilidade do SDL com ambas). Nesse momento irei focar em criar o executável para Linux por ser meu sistema principal. Fique à vontade para utilizar o Windows ou MacOS.
 
 ### Linguagem de programação
-E por último, mas não menos importante, a linguagem de programação. Eu escolhi **C/C++** por ser leve, muito utilizada (principalmente no mercado de jogos). Mas recomendo o leitor dar uma olhada em **Rust**, que vem ganhando um espaço em desempenho e confiabilidade. *Ambos com a documentação no final da página.* Posteriormente pretendo incluir [*Lua*](https://www.lua.org/portugues.html) para configuração em tempo real (**mais spoilers!**).
+E por último, mas não menos importante, a linguagem de programação. Eu escolhi **C/C++** por ser leve, muito utilizada (principalmente no mercado de jogos). Mas, recomendo o leitor dar uma olhada em **Rust**, que vem ganhando um espaço em desempenho e confiabilidade. *Ambos com a documentação no final da página.* Posteriormente pretendo incluir [*Lua*](https://www.lua.org/portugues.html) para configuração em tempo real (**mais spoilers!**).
 
 # Por que SDL?
-Existem várias bibliotecas para criar jogos disponíveis por aí. E, além disso, várias engines também, como citado anteriormente. Outra biblioteca que também é bastante utilizado é o [Raylib](https://www.raylib.com/). O motivo da escolha ser o **SDL** é por possuir mais recursos, ser mais complexo, estar a mais tempo no mercado ([foi lançado em 1998](https://pt.wikipedia.org/wiki/SDL_(biblioteca)), faz 28 anos no momento que estou escrevendo esse texto) e ao mesmo tempo ser leve.
+Existem várias bibliotecas para criar jogos disponíveis por aí. E, além disso, várias engines também, como citado anteriormente. Outra biblioteca que também é bastante utilizada é o [Raylib](https://www.raylib.com/). O motivo da escolha ser o **SDL** é por possuir mais recursos, ser mais complexo, estar a mais tempo no mercado ([foi lançado em 1998](https://pt.wikipedia.org/wiki/SDL_(biblioteca)), faz 28 anos no momento que estou escrevendo esse texto) e ao mesmo tempo ser leve.
 Mas fique à vontade de seguir o post usando [Raylib](https://www.raylib.com/), [GLFW](https://www.glfw.org/), [SFML](https://www.sfml-dev.org/) ou até mesmo alguma engine.
 
 # Hello SDL
@@ -82,7 +82,7 @@ Logo em seguida, com tudo instalado, devemos criar nosso `main.cpp` e incluir o 
 #include <SDL3/SDL.h>
 ```
 ## Iniciando uma janela em SDL3
-Devemos iniciar algumas varáveis globais também. Por enquanto faremos tudo isso no `main.cpp`. Mas adianto que esse modo é insustentável com um projeto desse tamanho e vou voltar nisso depois.
+Devemos iniciar algumas variáveis globais também. Por enquanto faremos tudo isso no `main.cpp`. Mas adianto que esse modo é insustentável com um projeto desse tamanho e vou voltar nisso depois.
 ```cpp
 char WINDOW_TITLE[] = "Hello SDL";
 int WINDOW_WIDTH = 800;
@@ -93,7 +93,7 @@ SDL_Renderer* renderer;
 
 bool done = false;
 ```
-Algumas variáveis é auto-explicativas, como `WINDOW_TITLE`, `WINDOW_WIDTH` e `WINDOWS_HEIGHT`. Ajuste como queira. O `SDL_Window*` cria um ponteiro para uma janela em SDL. O `SDL_Renderer*` cria um ponteiro para o renderizador do SDL que vai ser útil para exibir os conteúdos posteriormente. O boolean `done` vai servir como identificador que o jogo está rodando.
+Algumas variáveis são auto-explicativas, como `WINDOW_TITLE`, `WINDOW_WIDTH` e `WINDOWS_HEIGHT`. Ajuste como queira. O `SDL_Window*` cria um ponteiro para uma janela em SDL. O `SDL_Renderer*` cria um ponteiro para o renderizador do SDL que vai ser útil para exibir os conteúdos posteriormente. O boolean `done` vai servir como identificador que o jogo está rodando.
 
 Agora, a parte mais legal, vamos exibir uma janela e renderizar uma cor nela. Para isso, na `int main()`, fazemos o seguinte:
 ```cpp
@@ -138,7 +138,7 @@ SDL_DestroyRenderer(renderer);
 SDL_DestroyWindow(window);
 SDL_Quit();
 ```
-Se você executar, com o comando `make` e depois executar o `.\game`, já vai conseguir o resultado de uma janela. Mas vamos entender o que cada linha faz.
+Se você executar o jogo, compilando com o comando `make` e depois executando o `.\game`, já vai conseguir o resultado de uma janela. Mas vamos entender o que cada linha faz.
 
 ```cpp
 if(!SDL_Init(SDL_INIT_VIDEO)){
