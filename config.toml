@@ -3,7 +3,7 @@
 # "YOUR_USERNAME", "YOUR_SITE_TITLE", etc., with your actual data.
 
 # The base URL of the site; the only required configuration variable.
-base_url = "https://YOUR_URL.TLD"
+base_url = "https://zmizuky.github.io/IanMatrix"
 
 # The site theme to use.
 theme = "linkita"

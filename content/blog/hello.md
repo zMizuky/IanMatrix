@@ -11,9 +11,9 @@ alt = "Cubo — depois de aprender a desenhar um triângulo, geralmente criamos 
 tags = ["conversa"]
 +++
 
-# Bem-vindo ao {{site_name()}}
+# Bem-vindo ao IanMatrix
 
-Esse é o meu primeiro post no {{site_name()}}. 
+Esse é o meu primeiro post no IanMatrix. 
 
 Criei esse blog com o intuito de documentar (like [AkitaOnRails's](https://akitaonrails.com/)) todos os meus estudos e ao mesmo tempo servir como um **portfólio vivo**.
 
