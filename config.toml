@@ -3,15 +3,7 @@
 # "YOUR_USERNAME", "YOUR_SITE_TITLE", etc., with your actual data.
 
 # The base URL of the site; the only required configuration variable.
-<<<<<<< Updated upstream
-base_url = "https://zmizuky.github.io/IanMatrix"
-=======
-<<<<<<< HEAD
 base_url = "https://zmizuky.github.io/IanMatrix/"
-=======
-base_url = "https://zmizuky.github.io/IanMatrix"
->>>>>>> 98d3e9f (Add new post: Criando uma Engine em SDL3 — Parte 1)
->>>>>>> Stashed changes
 
 # The site theme to use.
 theme = "linkita"
