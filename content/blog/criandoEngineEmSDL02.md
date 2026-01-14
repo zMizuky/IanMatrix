@@ -1,7 +1,7 @@
 +++
 title = "Criando uma Engine em SDL3 — Parte 2"
 description = "Um passo a passo de como estou criando uma engine do zero usando SDL3."
-date = "2026-01-13"
+date = 2026-01-13T12:00:00-03:00
 [extra]
 [extra.cover]
 image = "images/criandoengine01.png"

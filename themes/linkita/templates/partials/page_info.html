@@ -32,6 +32,21 @@
       {%- if not loop.last %}<span
         class="middot"></span>{% endif %}
     {%- endif %}
+    {%- elif info.when == "hours" %}
+      {%- if page.date %}
+        {%if info.prepend %}{{ info.prepend }}{% endif %}
+        <time datetime="{{ page.date | date(format=`%+`) }}" class="time-ago">
+          {{ _str::datetime_as_str(value=page.date, format=date_format) }}
+        </time>
+        {%- if info.append %}{{ info.append }}{% endif %}
+        {%- if not loop.last %}<span
+          class="middot"></span>
+        {%- endif %}
+    {%- endif %}
+
+
+
+
   {%- elif info.when == "date_updated" %}{%
     if page.updated and page.updated != page.date %}{%
       if info.prepend %}{{ info.prepend }}{% endif %}<time

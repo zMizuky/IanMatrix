@@ -48,6 +48,25 @@
   <!-- Begin Body End inject -->
   {% include "injects/body_end.html" ignore missing %}
   <!-- End Body End inject -->
+   <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.time-ago').forEach(el => {
+        const postDate = new Date(el.getAttribute('datetime'));
+        const now = new Date();
+        const diffMs = now - postDate;
+        const diffMins = Math.floor(diffMs / (1000 * 60));
+        const diffHours = Math.floor(diffMs / (1000 * 60 * 60));
+        const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+
+        let text = '';
+        if (diffDays > 0) text = diffDays + ' dias atrás';
+        else if (diffHours > 0) text = diffHours + ' horas atrás';
+        else text = diffMins + ' minutos atrás';
+
+        el.innerText = text;
+      });
+    });
+  </script>
 </body>
 
 </html>

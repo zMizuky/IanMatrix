@@ -251,6 +251,20 @@ math = true
 # Default value: false
 mermaid = false
 
+[extra.giscus]
+repo = "zMizuky/IanMatrix"
+repo_id = ""
+category = ""
+category_id = ""
+mapping = "pathname"
+strict = 0
+reactions_enabled = 1
+emit_metadata = 0
+input_position = "top"
+theme = "dark"
+lang = "pt"
+loading = "lazy"
+
 # Enable comments globally.
 # Default value: false
 comment = true
@@ -310,9 +324,14 @@ invert_page_navigation = false
 # The "prepend" and "append" are used when the value of "when" is defined for the page.
 # e.g. [{when="", prepend="Page Info: "},{when="date",prepend="Published on "},{when="authors",prepend="By "}]
 # page_info = [{ when="date" }, { when="date_updated", prepend="(", append=")" }, { when="reading_time" }]
+page_info = [
+  { when="date"},
+  { when="hours", prepend="Publicado há "},
+  { when="reading_time", prepend=" Tempo de leitura: " }
+]
 
 # What info is shown for posts on paginators.
-# page_info_on_paginator = [{ when="date" }, { when="reading_time" }]
+page_info_on_paginator = [{ when="date" }, { when="hours" }, { when="reading_time"}]
 
 # Enable table of contents on all pages.
 # If not set, toc is enabled only on posts.
