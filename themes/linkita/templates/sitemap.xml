@@ -17,6 +17,16 @@
   {%- if sitemap_entry.extra.sitemap.priority is defined %}
   <priority>{{ sitemap_entry.extra.sitemap.priority | escape_xml | safe }}</priority>
   {%- endif %}
+  {% if sitemap_entry.permalink is ending_with("/blog/") %}
+  <priority>1.0</priority>
+  {% elif sitemap_entry.permalink is containing("/blog/") %}
+  <priority>0.9</priority>
+  {% elif sitemap_entry.permalink is ending_with("/") and sitemap_entry.permalink == "/" %}
+  <priority>1.0</priority>
+  {% else %}
+  <priority>0.5</priority>
+  {% endif %}
+
 </url>
 {%- endfor %}
 </urlset>

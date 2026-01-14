@@ -245,7 +245,7 @@ extra_themes = []
 [extra]
 # Enable KaTeX math formula support globally.
 # Default value: false
-math = true
+math = false
 
 # Enable Mermaid support globally.
 # Default value: false
