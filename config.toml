@@ -251,23 +251,9 @@ math = true
 # Default value: false
 mermaid = false
 
-[extra.giscus]
-repo = "zMizuky/IanMatrix"
-repo_id = ""
-category = ""
-category_id = ""
-mapping = "pathname"
-strict = 0
-reactions_enabled = 1
-emit_metadata = 0
-input_position = "top"
-theme = "dark"
-lang = "pt"
-loading = "lazy"
-
 # Enable comments globally.
 # Default value: false
-comment = true
+comment = false
 
 # Title separator.
 title_separator = " | "
