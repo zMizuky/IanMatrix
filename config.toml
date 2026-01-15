@@ -351,9 +351,7 @@ header_links = [
   { url = "", name = "Blog"},
   { url = "@/pages/archive.md", name = "Arquivos" },
   { url = "$BASE_URL/tags/", name = "Tags" },
-  { url = "@/pages/projects/_index.md", name = "Projetos" },
-  { name = "RSS", url = "$BASE_URL/atom.xml" }
-  
+  { url = "@/pages/projects/_index.md", name = "Projetos" }
 ]
 
 # Profiles
