@@ -4,7 +4,7 @@ description = "Um passo a passo de como estou criando uma engine do zero usando 
 date = 2026-01-13T12:00:00-03:00
 [extra]
 [extra.sitemap]
-priority = "0.9"
+priority = "0.8"
 [extra.cover]
 image = "images/criandoengine01.png"
 alt = "Engine em SDL3"

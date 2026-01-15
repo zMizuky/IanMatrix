@@ -19,13 +19,7 @@
   {%- endif %}
   {% if sitemap_entry.permalink is ending_with("/blog/") %}
   <priority>1.0</priority>
-  {% elif sitemap_entry.permalink is containing("/blog/") %}
-  <priority>0.9</priority>
-  {% elif sitemap_entry.permalink is ending_with("/") and sitemap_entry.permalink == "/" %}
-  <priority>1.0</priority>
-  {% else %}
-  <priority>0.5</priority>
-  {% endif %}
+  {%- endif %}
 
 </url>
 {%- endfor %}

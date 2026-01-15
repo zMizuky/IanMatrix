@@ -3,6 +3,8 @@ title = "Primeiro Post"
 description = "Primeiro post do IanMatrix, um blog para documentar meus estudos em programação, engines, jogos e sistemas."
 date = "2026-01-12"
 [extra]
+[extra.sitemap]
+priority = "0.8"
 [extra.cover]
 image = "images/cube.png"
 alt = "Cubo — depois de aprender a desenhar um triângulo, geralmente criamos um cubo para testar se realmente entendemos como o OpenGL funciona."
