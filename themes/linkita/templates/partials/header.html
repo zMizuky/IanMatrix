@@ -39,6 +39,15 @@
           class="btn-home h-6 w-6 shrink-0 cursor-pointer text-[0px]
             bg-center bg-no-repeat bg-cover [background-image:var(--icons-home,url(icons/home.svg))] dark:invert"
         ></button>
+          {%- elif header_button == "rss_button" %}
+        <button type="button" title="RSS"
+          onclick="window.location.href='{{ _link::rel(dest=_link::get(url=`$BASE_URL/atom.xml`), cu=_cu, base=_base) }}';"
+          class="select-none ml-4 h-6 w-6 shrink-0 cursor-pointer text-[0px]
+            bg-center bg-no-repeat bg-cover dark:invert"
+          style="background-image: var(--icons-rss, url(icons/rss.svg));"
+        ></button>
+
+
 
           {%- elif header_button == "theme_select" %}
         <details name="header_button">

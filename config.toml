@@ -304,6 +304,9 @@ invert_page_navigation = false
 # Can be set to an empty array.
 # header_buttons = ["site_title", "theme_select", "search_button", "translations_select"]
 
+header_buttons = ["site_title", "theme_select", "rss_button", "search_button"]
+
+
 # What info is shown on post pages.
 # Valid "when" values:
 #  "date", "date_updated", "reading_time", "word_count", "authors", "tags", "".
@@ -348,7 +351,8 @@ header_links = [
   { url = "", name = "Blog"},
   { url = "@/pages/archive.md", name = "Arquivos" },
   { url = "$BASE_URL/tags/", name = "Tags" },
-  { url = "@/pages/projects/_index.md", name = "Projetos" }
+  { url = "@/pages/projects/_index.md", name = "Projetos" },
+  { name = "RSS", url = "$BASE_URL/atom.xml" }
   
 ]
 
