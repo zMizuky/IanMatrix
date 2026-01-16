@@ -223,6 +223,7 @@ https://github.com/zMizuky/iMatrix
 ```
 # Demo jogável
 
+<div class="game-embed">
 <iframe
   src="../../iMatrix/game001/game.html"
   width="420"
@@ -230,6 +231,11 @@ https://github.com/zMizuky/iMatrix
   style="border: none; border-radius: 8px;"
   loading="lazy">
 </iframe>
+</div>
+
+<p class="mobile-warning">
+  Este jogo não é exibido em dispositivos móveis.
+</p>
 
 Acompanhe para a parte 3!
 
