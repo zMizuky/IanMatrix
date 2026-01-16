@@ -224,7 +224,7 @@ https://github.com/zMizuky/iMatrix
 # Demo jogável
 
 <iframe
-  src="/iMatrix/game001/game.html"
+  src="../../iMatrix/game001/game.html"
   width="420"
   height="320"
   style="border: none; border-radius: 8px;"
