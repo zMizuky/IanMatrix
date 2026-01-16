@@ -221,6 +221,16 @@ Pode ser acessado também pelo [GitHub](https://github.com/zMizuky/iMatrix):
 ```text
 https://github.com/zMizuky/iMatrix
 ```
+# Demo jogável
+
+<iframe
+  src="/iMatrix/game001/game.html"
+  width="420"
+  height="320"
+  style="border: none; border-radius: 8px;"
+  loading="lazy">
+</iframe>
+
 Acompanhe para a parte 3!
 
 # Links úteis
